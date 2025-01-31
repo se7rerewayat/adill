@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة الألعاب</title>
+    <style>
+        /* تنسيقات CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .games {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .game {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+        .game img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .game h2 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>منصة الألعاب</h1>
+    <div class="games">
+        <!-- لعبة Subway Surfers -->
+        <div class="game">
+            <img src="https://img.apkmirror.com/apk-importer/apkmirror-widget.png" alt="Subway Surfers">
+            <h2>Subway Surfers</h2>
+            <a href="https://www.apkmirror.com/apk/sybo-games/subway-surfers/" class="btn" onclick="showAlert('Subway Surfers')">تحميل</a>
+        </div>
+        <!-- لعبة Clash of Clans -->
+        <div class="game">
+            <img src="https://img.apkmirror.com/apk-importer/apkmirror-widget.png" alt="Clash of Clans">
+            <h2>Clash of Clans</h2>
+            <a href="https://www.apkmirror.com/apk/supercell/clash-of-clans/" class="btn" onclick="showAlert('Clash of Clans')">تحميل</a>
+        </div>
+        <!-- لعبة Temple Run -->
+        <div class="game">
+            <img src="https://img.apkmirror.com/apk-importer/apkmirror-widget.png" alt="Temple Run">
+            <h2>Temple Run</h2>
+            <a href="https://www.apkmirror.com/apk/imangi-studios/temple-run/" class="btn" onclick="showAlert('Temple Run')">تحميل</a>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript (وظيفة تفاعلية لإظهار رسالة تنبيه)
+        function showAlert(gameName) {
+            alert(`سيتم تحميل ${gameName} الآن.`);
+        }
+    </script>
+</body>
+</html>
